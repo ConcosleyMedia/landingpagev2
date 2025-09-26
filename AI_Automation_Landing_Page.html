@@ -1923,7 +1923,7 @@ window.addEventListener('load', function(){
         width: 100% !important;
         max-width: 100% !important;
         padding: 0 !important;
-        margin: 0 0 20px 0 !important;
+        margin: 0 0 8px 0 !important;
         order: initial !important;
         display: block !important;
       }
@@ -1946,7 +1946,7 @@ window.addEventListener('load', function(){
       /* Main headlines should be larger and more prominent */
       h1.elHeadline {
         font-size: 28px !important;
-        margin: 15px 0 !important;
+        margin: 6px 0 !important;
         font-weight: bold !important;
         line-height: 1.2 !important;
       }
@@ -1972,7 +1972,7 @@ window.addEventListener('load', function(){
       .de.elHeadlineWrapper {
         text-align: center !important;
         width: 100% !important;
-        margin: 15px 0 !important;
+        margin: 6px 0 !important;
       }
 
       /* Mobile Buttons */
@@ -2017,12 +2017,13 @@ window.addEventListener('load', function(){
         font-size: 14px;
       }
 
-      /* Mobile Video - Make it prominent and large */
+      /* Mobile Video - Remove all white space */
       .elVideoWrapper {
-        margin: 25px 0 !important;
+        margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
         text-align: center !important;
+        background: transparent !important;
       }
 
       video {
@@ -2032,11 +2033,16 @@ window.addEventListener('load', function(){
         min-height: 250px !important;
         border-radius: 12px !important;
         box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
       }
 
       /* Make video container more prominent */
       .elVideo {
         width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
       }
@@ -2123,6 +2129,62 @@ window.addEventListener('load', function(){
       .sticky-wrapper {
         position: static !important;
         margin-bottom: 10px;
+      }
+
+      /* Reduce spacing throughout page */
+      .container {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+
+      .fullContainer {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+
+      /* Remove excessive spacing from sections */
+      section, .section {
+        margin: 5px 0 !important;
+        padding: 5px 0 !important;
+      }
+
+      /* Reduce spacing between elements */
+      div {
+        margin-bottom: 5px !important;
+      }
+
+      /* Tighter paragraph spacing */
+      p {
+        margin: 3px 0 !important;
+        line-height: 1.3 !important;
+      }
+
+      /* Remove line breaks and excessive spacing */
+      br {
+        display: none !important;
+      }
+
+      /* Reduce gaps between content blocks */
+      .elWrapper {
+        margin: 5px 0 !important;
+      }
+
+      /* Remove all spacing around video elements */
+      .elVideoWrapper,
+      .elVideoWrapper .elVideo,
+      .elVideoWrapper > div,
+      .elVideo > div {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+      }
+
+      /* Target specific video container spacing */
+      #tmp_video-23489,
+      #tmp_video-23489 .elVideoWrapper,
+      #tmp_video-23489 .elVideo {
+        margin: 0 !important;
+        padding: 0 !important;
       }
 
       /* Mobile spacing adjustments */

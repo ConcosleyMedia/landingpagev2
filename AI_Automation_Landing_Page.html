@@ -2166,7 +2166,25 @@ window.addEventListener('load', function(){
 
       /* Reduce gaps between content blocks */
       .elWrapper {
-        margin: 5px 0 !important;
+        margin: 2px 0 !important;
+      }
+
+      /* Specific spacing between button and next section - 8px total */
+      .elButton {
+        margin-bottom: 4px !important;
+      }
+
+      /* Reduce spacing after buttons */
+      .elButtonWrapper {
+        margin-bottom: 4px !important;
+      }
+
+      /* Reduce spacing between all buttons and following sections */
+      .elButton + .elWrapper,
+      .elButtonWrapper + .elWrapper,
+      .elButton + div,
+      .elButtonWrapper + div {
+        margin-top: 4px !important;
       }
 
       /* Remove all spacing around video elements */

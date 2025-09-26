@@ -2061,30 +2061,29 @@ window.addEventListener('load', function(){
         object-fit: cover !important;
       }
 
-      /* Mobile Sections - Make blue header visible and compact */
+      /* Mobile Sections - Make blue header taller for text visibility */
       #section--67488 {
-        padding: 8px 0 !important;
-        min-height: 40px !important;
-        height: 40px !important;
-        max-height: 40px !important;
+        padding: 12px 0 !important;
+        min-height: 50px !important;
+        height: 50px !important;
+        max-height: 50px !important;
         overflow: visible !important;
-        display: flex !important;
-        align-items: center !important;
-      }
-
-      #section--67488 .elHeadline {
-        font-size: 14px !important;
-        padding: 0 10px !important;
-        margin: 0 !important;
-        line-height: 1.3 !important;
-        white-space: nowrap !important;
-        overflow: visible !important;
-        text-align: center !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        height: 100% !important;
+      }
+
+      #section--67488 .elHeadline {
+        font-size: 16px !important;
+        padding: 10px 15px !important;
+        margin: 0 !important;
+        line-height: 1.2 !important;
+        white-space: nowrap !important;
+        overflow: visible !important;
+        text-align: center !important;
+        display: block !important;
         color: white !important;
+        width: 100% !important;
       }
 
       #section--67488 .containerInner {
@@ -2102,26 +2101,33 @@ window.addEventListener('load', function(){
         align-items: center !important;
       }
 
-      /* Make main content section more prominent - reduce white space */
+      /* Make main content section more prominent - minimal white space */
       #container-89360 {
-        padding-top: 6px !important;
+        padding-top: 0px !important;
         padding-bottom: 20px !important;
         margin-top: 0 !important;
       }
 
+      /* Remove all spacing from first content section */
+      #container-89360 .row:first-child {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+      }
+
       /* Compact the sticky header wrapper to match reference */
       .sticky-wrapper {
-        height: 40px !important;
-        max-height: 40px !important;
-        min-height: 40px !important;
+        height: 50px !important;
+        max-height: 50px !important;
+        min-height: 50px !important;
         margin-bottom: 0px !important;
         overflow: visible !important;
         display: flex !important;
         align-items: center !important;
+        justify-content: center !important;
       }
 
       .sticky-wrapper * {
-        max-height: 40px !important;
+        max-height: 50px !important;
       }
 
       /* Mobile Typography */

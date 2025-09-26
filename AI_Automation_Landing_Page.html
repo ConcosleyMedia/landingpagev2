@@ -2061,18 +2061,34 @@ window.addEventListener('load', function(){
         object-fit: cover !important;
       }
 
-      /* Mobile Sections - Make blue header much smaller */
+      /* Mobile Sections - Make blue header TINY like reference */
       #section--67488 {
-        padding: 8px 0 !important;
-        min-height: auto !important;
-        height: auto !important;
+        padding: 3px 0 !important;
+        min-height: 30px !important;
+        height: 30px !important;
+        max-height: 30px !important;
+        overflow: hidden !important;
       }
 
       #section--67488 .elHeadline {
-        font-size: 16px !important;
-        padding: 5px 10px !important;
-        margin: 5px 0 !important;
-        line-height: 1.2 !important;
+        font-size: 12px !important;
+        padding: 2px 5px !important;
+        margin: 0 !important;
+        line-height: 1.1 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+
+      #section--67488 .containerInner {
+        padding: 2px 0 !important;
+        max-height: 26px !important;
+      }
+
+      #section--67488 .row {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-height: 26px !important;
       }
 
       /* Make main content section more prominent */
@@ -2081,11 +2097,18 @@ window.addEventListener('load', function(){
         padding-bottom: 20px !important;
       }
 
-      /* Compact the sticky header wrapper */
+      /* Compact the sticky header wrapper to match reference */
       .sticky-wrapper {
-        height: auto !important;
-        min-height: auto !important;
-        margin-bottom: 5px !important;
+        height: 30px !important;
+        max-height: 30px !important;
+        min-height: 30px !important;
+        margin-bottom: 0px !important;
+        overflow: hidden !important;
+      }
+
+      .sticky-wrapper * {
+        max-height: 30px !important;
+        overflow: hidden !important;
       }
 
       /* Mobile Typography */

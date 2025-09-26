@@ -1952,9 +1952,16 @@ window.addEventListener('load', function(){
       }
 
       /* Specific styling for main content headlines */
-      #headline-60019 .elHeadline,
+      #headline-60019 .elHeadline {
+        font-size: 28px !important;
+        line-height: 1.3 !important;
+        margin: 12px 0 !important;
+        padding: 0 10px !important;
+        font-weight: bold !important;
+      }
+
       #headline-28684 .elHeadline {
-        font-size: 24px !important;
+        font-size: 22px !important;
         line-height: 1.3 !important;
         margin: 12px 0 !important;
         padding: 0 10px !important;
@@ -2061,44 +2068,37 @@ window.addEventListener('load', function(){
         object-fit: cover !important;
       }
 
-      /* Mobile Sections - Make blue header taller for text visibility */
+      /* Hide the problematic blue bar section completely on mobile */
       #section--67488 {
-        padding: 12px 0 !important;
-        min-height: 50px !important;
-        height: 50px !important;
-        max-height: 50px !important;
-        overflow: visible !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
+        display: none !important;
       }
 
-      #section--67488 .elHeadline {
-        font-size: 16px !important;
-        padding: 10px 15px !important;
-        margin: 0 !important;
-        line-height: 1.2 !important;
-        white-space: nowrap !important;
-        overflow: visible !important;
-        text-align: center !important;
-        display: block !important;
-        color: white !important;
-        width: 100% !important;
+      .sticky-wrapper {
+        display: none !important;
       }
 
-      #section--67488 .containerInner {
-        padding: 0 !important;
-        height: 100% !important;
-        display: flex !important;
-        align-items: center !important;
+      /* Add blue bar text to very top of page */
+      body::before {
+        content: "New Content, Working & Updated For September 2025";
+        display: block;
+        background-color: #008eff;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 10px;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        line-height: 1.2;
       }
 
-      #section--67488 .row {
-        margin: 0 !important;
-        padding: 0 !important;
-        height: 100% !important;
-        display: flex !important;
-        align-items: center !important;
+      /* Add top margin to body to account for fixed header */
+      body {
+        margin-top: 35px !important;
       }
 
       /* Make main content section more prominent - minimal white space */
@@ -2112,22 +2112,6 @@ window.addEventListener('load', function(){
       #container-89360 .row:first-child {
         margin-top: 0 !important;
         padding-top: 0 !important;
-      }
-
-      /* Compact the sticky header wrapper to match reference */
-      .sticky-wrapper {
-        height: 50px !important;
-        max-height: 50px !important;
-        min-height: 50px !important;
-        margin-bottom: 0px !important;
-        overflow: visible !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-      }
-
-      .sticky-wrapper * {
-        max-height: 50px !important;
       }
 
       /* Mobile Typography */

@@ -2187,6 +2187,32 @@ window.addEventListener('load', function(){
         margin-top: 4px !important;
       }
 
+      /* FAQ formatting - restore clear separation between questions and answers */
+      .elHeadline div {
+        line-height: 1.6 !important;
+      }
+
+      /* Restore proper spacing for FAQ section */
+      .elHeadline div br {
+        display: block !important;
+        height: 15px !important;
+      }
+
+      /* Add visual separation between Q&A pairs */
+      .elHeadline div div:nth-child(odd) {
+        margin-top: 20px !important;
+        padding-top: 15px !important;
+        border-top: 1px solid #e0e0e0 !important;
+      }
+
+      /* Ensure FAQ text has proper spacing */
+      #headline-78892 .elHeadline div,
+      .elHeadline div:contains("Question"),
+      .elHeadline div:contains("Answer") {
+        margin: 10px 0 !important;
+        line-height: 1.5 !important;
+      }
+
       /* Remove all spacing around video elements */
       .elVideoWrapper,
       .elVideoWrapper .elVideo,
